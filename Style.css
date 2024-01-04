@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(img/BackgroundPizza.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+
+#Nav{
+    
+    color: lightgrey;
+    
+}
+
+
+
+.welcomeContainer{
+    
+    margin-top: 18rem;
+    background-color: black;
+    transform: scaleZ(0);
+    animation: welcomeAnimation 1s ease-in-out forwards;
+    opacity: 0;
+}
+
+
+.card{
+    opacity: 85%;
+    
+}
+
+.welcomeContainer:hover{
+    opacity: 100%;
+}
+
+.cartlist{
+    width: 450px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 0px;
+    left:auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    border-color: #4F6F52;
+    border-style:groove;
+    overflow: auto;
+    transition: 2s ease-in-out;
+}
+
+body.showcart .cartlist{
+    right: -400px;
+}
+
+body.showcart .cartContainer{
+    transform: translateX(-250%);
+}
+
+
+
+
+
+.cartlist::-webkit-scrollbar{
+    width:0;
+}
+
+.cartimage{
+    width: 100%;
+}
+
+.bella-mia{
+    height: 2rem;
+}
+
+
+
+
+
+.plus{
+    
+    padding: 1px;
+    margin: 0 0 5px 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}
+.minus{
+    padding: 1px;
+    margin: 0 5px 5px 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.card-footer{
+    
+    height: 5rem;
+    margin-top: 8.5rem;
+}
+
+    
+.facebook{
+    height: 2rem;
+}
+.instagram{
+    height: 3rem;
+}
+
+.cartimg:hover{
+    opacity: 80%;
+}
+.cartimg{
+    left: 74%;
+    text-decoration: none;
+    position: relative;
+    height: 1.5rem;
+}
+
+
+.qauntity{
+    position: absolute;
+    top:50%;
+    left: 78%;
+    font-size: 13px;
+    color: white;
+    display: flex;
+    width: 15px;
+    height: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 50%;
+    
+    
+}
+    
+
+
+
+
+.phoneIcon{
+    height: 1.5rem;
+}
+.homeIcon{
+    height: 1.5rem;
+}
+.clockIcon{
+    height: 1.5rem;
+}
+
+.alert{
+    opacity: 85%;
+}
+
+@keyframes welcomeAnimation {
+    from {
+      
+      transform: scaleZ(0);
+      opacity: 10%;
+    }
+    to {
+     
+      transform: scaleZ(1);
+      opacity: 65%;
+    }
+}
+
+
